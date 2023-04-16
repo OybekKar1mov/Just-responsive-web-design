@@ -12,12 +12,6 @@ a {
   color: #000;
 }
 
-ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 li {
   list-style: none;
 }
@@ -50,6 +44,12 @@ nav {
     }
 
     .nav__list {
+      width: 50%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
       a li {
         margin-right: 30px;
         text-transform: uppercase;
@@ -152,7 +152,7 @@ section {
   .third__twin {
     width: 100%;
     height: 100vh;
-    padding-top: 55px;
+    padding-top: 10%;
     display: flex;
     align-items: center;
     text-align: center;
@@ -243,7 +243,46 @@ section {
   display: none;
 }
 
-@media (max-width: 1000px) {
+// Footer
+
+$color_1: #000;
+$color_2: #ff4a32;
+
+/* footer info */
+.footer {
+  width: 100%;
+  height: 330px;
+  display: flex;
+  justify-content: space-evenly;
+  background: #f7f7f7;
+  align-items: center;
+}
+.footer_logo {
+  img {
+    width: 250px;
+    height: 50px;
+  }
+}
+ul {
+  h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  li {
+    font-size: 16px;
+    margin: 3px;
+  }
+}
+#footer_info {
+  align-items: center;
+  text-align: center;
+  a {
+    color: $color_2;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 728px) {
   // Navbar
 
   .nav {
@@ -451,6 +490,7 @@ section {
         width: 100%;
         display: block;
         margin-top: 40px;
+        text-align: left;
 
         h5 {
           font-weight: normal;
@@ -472,7 +512,7 @@ section {
     .third__twin {
       width: 100%;
       height: 100vh;
-      padding-top: 55px;
+      margin-top: 60%;
       display: block;
       align-items: center;
       text-align: center;
@@ -528,7 +568,7 @@ section {
         display: flex;
         align-items: center;
         flex-wrap: nowrap;
-        overflow: scroll;
+        overflow-x: scroll;
         .card {
           width: 100%;
           height: auto;
@@ -559,5 +599,53 @@ section {
         }
       }
     }
+  }
+
+  // Footer
+
+  $color_1: #000;
+  $color_2: #ff4a32;
+
+  /* footer info */
+  .footer {
+    width: 100%;
+    height: 330px;
+    display: flex;
+    justify-content: space-evenly;
+    background: #f7f7f7;
+    align-items: center;
+  }
+  .footer_logo {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 260px;
+      height: 50px;
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      font-size: 0px;
+    }
+    li {
+      font-size: 0px;
+    }
+    a {
+      text-decoration: none;
+      color: $color_1;
+    }
+    p {
+      font-size: 0px;
+    }
+  }
+  #footer_info {
+    align-items: center;
+    text-align: center;
   }
 }
