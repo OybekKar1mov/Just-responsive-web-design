@@ -2,4 +2,6 @@
 
 It's about Fitness club
 
-For run, just download it and relax
+# To run
+
+Just download it and relax
