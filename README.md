@@ -1,5 +1,4 @@
-# Just-responsive-web-design    |      [fit-ui-development.netlify.app
-](https://fit-ui-development.netlify.app/)
+# Just-responsive-web-design    |      https://fit-ui-development.netlify.app/
 It's about Fitness club
 
 # To run
